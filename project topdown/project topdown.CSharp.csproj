@@ -67,9 +67,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerMaster.cs" />
+    <Compile Include="Assets\Scripts\TurretScript.cs" />
     <Compile Include="Assets\Scripts\movement.cs" />
     <Compile Include="Assets\Scripts\projectile.cs" />
-    <Compile Include="Assets\TurretScript.cs" />
+    <Compile Include="Assets\healthScript.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

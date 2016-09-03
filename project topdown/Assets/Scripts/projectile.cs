@@ -11,7 +11,7 @@ public class projectile : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Bullet" || collision.tag == "Turret")
+        if(collision.tag == "Bullet" || collision.tag == "Turret" || collision.tag == "Hazzard")
         {
             return;
         }
@@ -21,5 +21,12 @@ public class projectile : MonoBehaviour
             collision.GetComponent<PlayerMaster>().curHp -= dmg;   
                   
                      }
+
+        if (collision.tag == "Enemy" && friendly == true)
+        {
+            collision.GetComponent<HealthScript>().SendMessage("takeDamage",dmg);
+            
+
+        }
     }
 }

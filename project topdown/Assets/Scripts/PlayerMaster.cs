@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class PlayerMaster : MonoBehaviour {
 
@@ -9,10 +10,11 @@ public class PlayerMaster : MonoBehaviour {
     public int curMp;
     public int maxMp;
 
+    public Slider hpBar;
 
 	// Use this for initialization
 	void Start () {
-	
+        hpBar.maxValue = maxHp;
 	}
 	
 	// Update is called once per frame
@@ -22,6 +24,8 @@ public class PlayerMaster : MonoBehaviour {
 
    void checkPlayerStatus()
     {
+
+        hpBar.value = curHp;
         if(curHp > maxHp)
         {
             curHp = maxHp;
