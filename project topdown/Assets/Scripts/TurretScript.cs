@@ -3,7 +3,7 @@ using System.Collections;
 
 public class TurretScript : MonoBehaviour {
 
-    private bool alive;
+    private bool active;
     public bool power;
 
     public int TurretDmg;
@@ -24,11 +24,11 @@ public class TurretScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        alive = hp.alive;
+        active = hp.alive;
         if (power == true)  transform.RotateAround(gameObject.transform.position, Vector3.forward, rotationSpeed * Time.deltaTime); 
         else StopAllCoroutines();
         
-        if(alive == false)
+        if(active == false)
         {
 
             //Dodaj destroy animacijo!
