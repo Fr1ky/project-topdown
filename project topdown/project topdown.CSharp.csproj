@@ -69,10 +69,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\HealthScript.cs" />
+    <Compile Include="Assets\MouseControll.cs" />
     <Compile Include="Assets\Scripts\PlayerMaster.cs" />
     <Compile Include="Assets\Scripts\TurretScript.cs" />
     <Compile Include="Assets\Scripts\movement.cs" />
     <Compile Include="Assets\Scripts\projectile.cs" />
+    <Compile Include="Assets\enemyShoot.cs" />
+    <Compile Include="Assets\gunScript.cs" />
     <Compile Include="Assets\testShoot.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
